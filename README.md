@@ -41,8 +41,8 @@ Welcome to my **personal developer portfolio** – a showcase of my skills, proj
 
 If you’d like to connect, feel free to reach out:
 
-- Email: yourname@email.com
-- LinkedIn: [linkedin.com/in/yourusername](https://linkedin.com/in/yourusername)
+- Email: contactmenitish06@gmail.com
+- LinkedIn: [linkedin.com/in/nityananda-krishnanmoorthy](https://linkedin.com/in/nityananda-krishnanmoorthy)
 
 ## 📜 License
 
