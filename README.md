@@ -4,7 +4,7 @@ Welcome to my **personal developer portfolio** – a showcase of my skills, proj
 
 ## 🚀 Live Demo
 
-🌐 [View Portfolio Live](https://nityananda-portfolio.netlify.app)  
+🌐 [View Portfolio Live](https://nityananda-portfolio.vercel.app/)  
 📂 [Repository](https://github.com/Nityananda-Krishnamoorthy/Protfolio)
 
 ## 📌 Features
