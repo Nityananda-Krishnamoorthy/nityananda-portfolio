@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  background-color: black;
+  color: white;
+  cursor: none;
+}
+
+
+
+.img-box {
+  @apply bg-violet-700 overflow-hidden;
+}
+
+.img-cover {
+  @apply w-full h-full object-cover;
+
+}
+
+/* Button */
+.btn {
+  @apply inline-flex items-center gap-2 font-medium transition duration-300 ease-in-out;
+}
+
+
+.btn .material-symbols-rounded {
+  @apply text-[18px]
+}
+
+.btn:has( .material-symbols-rounded){
+  @apply pr-3
+}
+
+.btn-primary {
+  @apply h-11 px-6 py-2 rounded-full bg-violet-500 text-white font-semibold
+  hover:bg-violet-400 active:bg-violet-600 transition-all duration-300
+  shadow-md hover:shadow-violet-500/50;
+}
