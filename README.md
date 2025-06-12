@@ -1,13 +1,59 @@
-# React + Vite
+# 🧑‍💻 Nityananda Krishnamoorthy – Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my **personal developer portfolio** – a showcase of my skills, projects, and professional journey. This portfolio is built with modern technologies like **React**, **Tailwind CSS**, and **Framer Motion** to deliver a smooth, interactive experience.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🌐 [View Portfolio Live](https://nityananda-portfolio.netlify.app)  
+📂 [Repository](https://github.com/Nityananda-Krishnamoorthy/Protfolio)
 
-## Expanding the ESLint configuration
+## 📌 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Protfolio
+- 🚀 Clean and responsive UI
+- 🌈 Smooth animations with Framer Motion
+- ⚙️ Dynamic project display
+- 📫 Contact form integration
+- 🌙 Dark-themed modern design
+
+## 🛠️ Built With
+
+- **React JS**
+- **Tailwind CSS**
+- **Framer Motion**
+- **React Icons**
+- **EmailJS** (if contact form is integrated)
+- **Git & GitHub**
+
+## 📂 Sections
+
+- **Home** – Introduction & Hero
+- **About** – Background and bio
+- **Skills** – Technologies & tools
+- **Projects** – Project showcase
+- **Contact** – Get in touch form
+
+## 🖼️ Screenshots
+
+![Home Section](https://your-screenshot-url.com/home.png)
+![Projects Section](https://your-screenshot-url.com/projects.png)
+
+## 📧 Contact
+
+If you’d like to connect, feel free to reach out:
+
+- Email: yourname@email.com
+- LinkedIn: [linkedin.com/in/yourusername](https://linkedin.com/in/yourusername)
+
+## 📜 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+### 👏 Acknowledgments
+
+Thanks to the open-source community and tutorial creators who inspired this project!
+
+---
+
+> Built with ❤️ by [Nityananda Krishnamoorthy](https://github.com/Nityananda-Krishnamoorthy)
