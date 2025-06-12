@@ -34,7 +34,7 @@ Welcome to my **personal developer portfolio** – a showcase of my skills, proj
 
 ## 🖼️ Screenshots
 
-![Home Section](https://your-screenshot-url.com/home.png)
+![Home Section](https://github.com/Nityananda-Krishnamoorthy/nityananda-portfolio/blob/main/src/assets/images/avatar.png)
 ![Projects Section](https://your-screenshot-url.com/projects.png)
 
 ## 📧 Contact
