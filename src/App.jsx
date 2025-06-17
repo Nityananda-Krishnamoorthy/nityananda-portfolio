@@ -5,19 +5,22 @@ import Banner from "./components/Banner"
 import Skill from "./components/SkillSection"
 import Project from "./components/Project"
 import Contact from "./components/Contect"
+import Footer from "./components/Footer"
+
 
 export default function App() {
   return (
-    <>
-     <Header />
-     <main>
-     <Hero />
-     </main>
-     <CustomCursor />
-     <Banner />
-     <Skill />
-     <Project />
-     <Contact />
-    </>
-  )
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="flex-grow">
+        <Hero />
+        <CustomCursor />
+        <Banner />
+        <Skill />
+        <Project />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  );
 }

@@ -26,7 +26,7 @@ const Banner = () => {
     </motion.h1>
 
     {/* Flex container for image and content */}
-    <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
+    <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
       
       {/* Image */}
       <motion.div
@@ -35,7 +35,7 @@ const Banner = () => {
         transition={{ duration: 1.2, delay: 0.6, type: "spring" }}
       >
         <figure
-          className="lg:max-w-[600px] xl:max-w-[700px] bg-gradient-to-t 
+          className="flex-1 lg:max-w-[600px] xl:max-w-[700px] bg-gradient-to-t 
           from-violet-400 via-25% via-violet-400/40 
           to-65% rounded-[60px] overflow-hidden"
         >
@@ -58,13 +58,11 @@ const Banner = () => {
       >
         {/* Status */}
         <div className="flex items-center gap-3">
-          <figure className="img-box w-9 h-9 rounded-lg">
+          <figure className="img-box w-9 h-9 rounded-lg overflow-hidden">
             <img
               src={avatar1}
-              width={40}
-              height={40}
               alt="Nityananda K Portrait"
-              className="img-cover"
+              className="w-full h-full object-cover"
             />
           </figure>
 

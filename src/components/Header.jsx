@@ -1,8 +1,34 @@
 import { motion, AnimatePresence} from 'framer-motion'
 import { FiGithub, FiTwitter, FiLinkedin, FiMenu, FiX} from 'react-icons/fi'
 import { useState } from 'react'
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import toast, { Toaster } from 'react-hot-toast';
+import Logo from '/icon.png';
 
 const Header = () => {
+    // Contact form by Using Emailjs 
+     const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_xpyu1qf', 'template_ayoqcff', form.current, {
+        publicKey: 'UV3nRvWglyc8R9qar',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          form.current.reset();
+          toast.success(" Message sent successfully!");
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          toast.error("Failed to send. Try again later.");
+        }
+      );
+  };
     //toggle the menu oper/close
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => setIsOpen(!isOpen);
@@ -28,9 +54,9 @@ const Header = () => {
            }}
 
            className="flex items-center">
-            <div className="h-10 w-10 rounded-xl bg-gradient-to-r from-gray-500 to-gray-100 flex items-center justify-center 
+            <div className="h-10 w-10 rounded-3xl bg-gradient-to-r from-gray-500 to-gray-100 flex items-center justify-center 
             text-purple-600 font-bold text-xl mr-3">
-                N
+                <img src={Logo} alt="Logo" />
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-gray-300 to-gray-100 bg-clip-text text-transparent ">
                 Nityananda K
@@ -76,7 +102,7 @@ const Header = () => {
             transition={{delay: 1.3, duration: 0.8}}
             className='text-gray-300 dark:text-gray-300 hover:text-violet-600
             dark:hover:text-violet-400 transition-colors duration-300'
-            href="#">
+            href="https://github.com/Nityananda-Krishnamoorthy">
                 <FiGithub className='w-5 h-5' />
             </motion.a>
             <motion.a 
@@ -85,7 +111,7 @@ const Header = () => {
             transition={{delay: 1.3, duration: 0.8}}
             className='text-gray-300 dark:text-gray-300 hover:text-violet-600
             dark:hover:text-violet-400 transition-colors duration-300'
-            href="#">
+            href="https://x.com/NityanandaK6">
                 <FiTwitter className='w-5 h-5' />
             </motion.a>
             <motion.a 
@@ -94,7 +120,7 @@ const Header = () => {
             transition={{delay: 1.3, duration: 0.8}}
             className='text-gray-300 dark:text-gray-300 hover:text-violet-600
             dark:hover:text-violet-400 transition-colors duration-300'
-            href="#">
+            href="https://www.linkedin.com/in/nityananda-krishnanmoorthy">
                 <FiLinkedin className='w-5 h-5' />
             </motion.a>
               {/* Hire me button*/}
@@ -147,13 +173,13 @@ const Header = () => {
             <div className='pt-4 border-t border-gray-200
             dark:border-gray-700'>
                 <div className='flex space-x-5'>
-                    <a href="#">
+                    <a href="https://github.com/Nityananda-Krishnamoorthy">
                         <FiGithub className='h-5 w-5 text-gray-300'/>
                     </a>
-                    <a href="#">
+                    <a href="https://x.com/NityanandaK6">
                         <FiTwitter className='h-5 w-5 text-gray-300'/>
                     </a>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/nityananda-krishnanmoorthy/">
                         <FiLinkedin className='h-5 w-5 text-gray-300'/>
                     </a>
                 </div>
@@ -203,36 +229,47 @@ const Header = () => {
                         <FiX className='w-5 h-5 text-gray-300 mb-6' />
                     </button>
                     </div>
+                     <Toaster position="top-center" reverseOrder={false} />
                     {/* Input forms*/}
-                    <form className='space-y-6'>
+                    <form className='space-y-6'
+                        ref={form}
+                        onSubmit={sendEmail}
+                        method="POST"
+                    >
                         <div>
-                            <label htmlFor="name" className='block text-sm font-medium text-gray-300 mb-1'>Name</label>
+                            <label htmlFor="user_name" className='block text-sm font-medium text-gray-300 mb-1'>Name</label>
                             <input 
                               type="text"
-                              id='name'
+                              id='user_name'
+                              name='user_name'
                               placeholder='Your Name'
                               className='w-full px-4 py-2 border border-gray-600 rounded-lg focus:ring-2
                               focus:ring-violet-500 focus:border-violet-500 bg-gray-700'
+                              required
                             />
                         </div>
                         <div>
-                            <label htmlFor="email" className='block text-sm font-medium text-gray-300 mb-1'>Email</label>
+                            <label htmlFor="user_email" className='block text-sm font-medium text-gray-300 mb-1'>Email</label>
                             <input 
                               type="email"
-                              id='email'
+                              id='user_email'
+                              name='user_email'
                               placeholder='Your Email'
                               className='w-full px-4 py-2 border border-gray-600 rounded-lg focus:ring-2
                               focus:ring-violet-500 focus:border-violet-500 bg-gray-700'
+                              required
                             />
                         </div>
                         <div>
                             <label htmlFor="message" className='block text-sm font-medium text-gray-300 mb-1'>Message</label>
                             <textarea
                               rows="4"
-                              id='nmessage'
+                              id='message'
+                              name='message'
                               placeholder='How can we help you?'
                               className='w-full px-4 py-2 border border-gray-600 rounded-lg focus:ring-2
                               focus:ring-violet-500 focus:border-violet-500 bg-gray-700'
+                              required
                             />
                         </div>
 
