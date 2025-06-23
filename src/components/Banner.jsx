@@ -96,7 +96,7 @@ const Banner = () => {
         {/* Button */}
       <div className="flex items-center gap-3">
   <a
-    href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"
+    href="https://drive.google.com/file/d/1RTiH_J7kfdqHwL1LxlFFpNEXgXKcoY6J/view?usp=drivesdk"
     target="_blank"
     rel="noopener noreferrer"
   >
