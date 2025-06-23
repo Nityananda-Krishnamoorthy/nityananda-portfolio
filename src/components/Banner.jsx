@@ -94,9 +94,15 @@ const Banner = () => {
           </p>
 
         {/* Button */}
-        <div className="flex items-center gap-3">
-          <ButtonPrimary label="Download CV" icon={<FiDownload />} />
-        </div>
+      <div className="flex items-center gap-3">
+  <a
+    href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <ButtonPrimary label="Download CV" icon={<FiDownload />} />
+  </a>
+</div>
       </motion.div>
     </div>
   </div>
