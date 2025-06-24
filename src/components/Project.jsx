@@ -19,7 +19,7 @@ const projects = [
   {
     title: "Admin-Dashboard",
     description: "A responsive admin panel with charts, product management, and analytics.",
-    tech: ["React", "Material UI", "Nivo Charts", "JavaScript", "Git", "Nodejs", "Github", "Codespace"],
+    tech: ["React", "Material UI", "Redux", "JavaScript"],
     github: "https://github.com/Nityananda-Krishnamoorthy/Admin-Dashboard.git",
     live: "https://admin-dashboard-seven-zeta-30.vercel.app/dashboard",
   },
