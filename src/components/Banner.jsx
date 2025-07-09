@@ -3,6 +3,7 @@ import avatar from "../assets/images/avatar.png";
 import avatar1 from "../assets/images/avatar1.jpg";
 import { ButtonPrimary } from "./Button";
 import { FiDownload } from "react-icons/fi";
+import { CV } from "../utils/util";
 
 const Banner = () => {
   return (
@@ -96,7 +97,7 @@ const Banner = () => {
         {/* Button */}
       <div className="flex items-center gap-3">
   <a
-    href="https://drive.google.com/file/d/1RTiH_J7kfdqHwL1LxlFFpNEXgXKcoY6J/view?usp=drivesdk"
+    href={ CV }
     target="_blank"
     rel="noopener noreferrer"
   >
