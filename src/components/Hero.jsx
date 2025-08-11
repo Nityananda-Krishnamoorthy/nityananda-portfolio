@@ -48,9 +48,8 @@ const Hero = () => {
             duration: 1.5,
         }}
         className="text-xl md:text-1xl lg:text-2xl text-purple-200 max-w-2xl ">
-           <strong>Full-Stack Developer | Future Tech Entrepreneur </strong> <br />
-            Crafting powerful web solutions with clean code, big vision, and unstoppable drive.
-            Let’s build something amazing together.
+           <strong>Full-Stack Developer | MERN & Java Specialist</strong> <br />
+           Delivering responsive, secure, and maintainable software solutions with a strong vision, adaptable mindset, and dedication to excellence.
         </motion.p>
     </div>
     {/* right side */}

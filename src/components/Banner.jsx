@@ -86,11 +86,11 @@ const Banner = () => {
             WebkitTextFillColor: "transparent",
           }}
         >
-         I specialize in building fast, secure, and scalable full-stack web applications using modern tools like <strong className="font-semibold">React</strong>, <strong className="font-semibold">Node.js</strong>, <strong className="font-semibold">Spring Boot</strong>, and <strong className="font-semibold">MongoDB</strong>. <br /><br />
-            With a sharp eye for design and a strong understanding of back-end systems, I create seamless, engaging user experiences that not only look great - but perform flawlessly. Whether it’s a portfolio site, a SaaS platform, or an enterprise dashboard, I bring clarity, craftsmanship, and care to every project I touch.
-            
-            <br /><br/>
-            Always learning, always building - one project at a time.
+        I specialize in developing fast, secure, and scalable full-stack web applications using modern technologies like <strong className="font-semibold">React</strong>, <strong className="font-semibold">Node.js</strong>, <strong className="font-semibold">Spring Boot</strong>, and <strong className="font-semibold">MongoDB</strong>. <br /><br />
+With a strong eye for UI/UX design and a solid grasp of back-end architecture, I deliver seamless, high-performance user experiences that combine visual appeal with robust functionality. From portfolio websites to SaaS platforms and enterprise dashboards, I focus on building solutions that are reliable, efficient, and easy to maintain.
+<br /><br />
+Driven by continuous learning and innovation, I bring dedication, problem-solving skills, and attention to detail to every project — turning ideas into impactful digital products.
+
 
           </p>
 
