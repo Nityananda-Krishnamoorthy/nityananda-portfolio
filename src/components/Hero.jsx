@@ -48,8 +48,8 @@ const Hero = () => {
             duration: 1.5,
         }}
         className="text-xl md:text-1xl lg:text-2xl text-purple-200 max-w-2xl ">
-           <strong>Full-Stack Developer | MERN & Java Specialist</strong> <br />
-           Delivering responsive, secure, and maintainable software solutions with a strong vision, adaptable mindset, and dedication to excellence.
+           <strong>Full-Stack Developer |Aspiring Data Scientist | Python, SQL & Statistical Analysis</strong> <br />       
+           Delivering responsive, secure, and maintainable software solutions while leveraging data-driven approaches to build intelligent, efficient, and impactful outcomes — guided by strong vision, adaptability, and dedication to excellence.
         </motion.p>
     </div>
     {/* right side */}
