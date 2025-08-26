@@ -48,7 +48,7 @@ const Hero = () => {
             duration: 1.5,
         }}
         className="text-xl md:text-1xl lg:text-2xl text-purple-200 max-w-2xl ">
-           <strong>Full-Stack Developer |Aspiring Data Scientist | Python, SQL & Statistical Analysis</strong> <br />       
+           <strong>Full-Stack Developer | Aspiring Data Scientist | <br /> Python, SQL & Statistical Analysis | Machine Learning & AI Enthusiast</strong> <br />       
            Delivering responsive, secure, and maintainable software solutions while leveraging data-driven approaches to build intelligent, efficient, and impactful outcomes — guided by strong vision, adaptability, and dedication to excellence.
         </motion.p>
     </div>
