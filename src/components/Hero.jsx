@@ -2,7 +2,7 @@ import {motion} from "framer-motion";
 import Spline from "@splinetool/react-spline";
 
 
-const Hero = () => {
+const Hero = () => { 
   return (
    <section id="home" className="min-h-screen bg-gradient-to-b from-violet-900 to-black
    flex xl:flex-row flex-col-reverse items-center justify-between lg:px-24 px-10
